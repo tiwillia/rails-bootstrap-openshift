@@ -57,3 +57,7 @@ gem "twitter-bootstrap-rails"
 
 # Gotta have json
 gem 'json'
+
+# Add strong_parameters, since we are using rails 3.2
+gem 'strong_parameters'
+ 
