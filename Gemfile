@@ -60,4 +60,6 @@ gem 'json'
 
 # Add strong_parameters, since we are using rails 3.2
 gem 'strong_parameters'
- 
+
+# Use Nokogiri to parse html and xml
+gem 'nokogiri' 
