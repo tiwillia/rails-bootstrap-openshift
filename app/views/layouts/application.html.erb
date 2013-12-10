@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsApp</title>
+  <title><%= CONFIG[:project_name] %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -28,7 +28,23 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
+    <% if flash[:success] || flash[:info] || flash[:error] %>
+      <div class="row">
+        <div class="span4">
+          <% if flash[:success] %>
+            <% alert_type = "success"; alert = flash[:success] %>
+          <% elsif flash[:info] %>
+            <% alert_type = "info"; alert = flash[:info] %>
+          <% elsif flash[:error] %>
+            <% alert_type = "error"; alert = flash[:error] %>
+          <% end %>
+            <div class="alert alert-<%= alert_type %>">
+                <strong><%= alert %></strong>
+            </div>
+        </div>
+      </div>
+    <% end %>
     <%= yield %>
   </div>
 

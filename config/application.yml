@@ -1,3 +1,8 @@
 # Configuration goes here in YAML
 # These can be called in code with CONFIG[:key]
 project_name: "Project Name"
+
+# This should be set to the local app directory.
+# When pushing to openshift, this will be overwritten with the data directory
+# See config/application.rb
+data_dir: "/home/tiwillia/Projects/rails-openshift-bootstrap/"

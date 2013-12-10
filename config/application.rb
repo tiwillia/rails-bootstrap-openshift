@@ -14,6 +14,11 @@ CONFIG = YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
 CONFIG.merge! CONFIG.fetch(Rails.env, {})
 CONFIG.symbolize_keys!
 
+# This is required for paperclip to work with openshift
+if ENV['OPENSHIFT_DATA_DIR']
+  CONFIG[:data_dir] = ENV['OPENSHIFT_DATA_DIR']
+end
+   
 module RailsApp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -25,6 +30,7 @@ module RailsApp
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
 
+    config.serve_static_assets = true
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.

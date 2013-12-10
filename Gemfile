@@ -53,7 +53,7 @@ gem 'minitest'
 # This integrates twitter's bootstrap
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
+gem "twitter-bootstrap-rails", :branch => 'bootstrap3'
 
 # Gotta have json
 gem 'json'
@@ -62,4 +62,12 @@ gem 'json'
 gem 'strong_parameters'
 
 # Use Nokogiri to parse html and xml
-gem 'nokogiri' 
+gem 'nokogiri'
+
+# Markdown rendering
+gem 'redcarpet'
+
+# Use paperclip as an image attachment handler
+# Requires rmagick
+gem 'paperclip'
+gem 'rmagick' 

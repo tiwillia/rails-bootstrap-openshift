@@ -6,5 +6,14 @@ The following changes have been implemented:
     - See /config/application.yml.sample
 - Added twitter's bootstrap
     - See https://github.com/seyhunak/twitter-bootstrap-rails
-    - For bootstrap examples, see http://getbootstrap.com/2.3.2/components.html
+
+Paperclip configuration requires the following in your model:
+
+has_attached_file :photo,
+  :styles => {
+    :thumb => "100x100#",
+    :medium => "256x192" },
+  :url => "/images/:id.:extension",
+  :path => "#{CONFIG[:data_dir]}public/images/:id.:extension"
+
 
