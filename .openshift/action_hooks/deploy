@@ -31,6 +31,31 @@ else
   fi
 fi
 
+######################################
+# PAPERCLIP ASSET CONFIGURATION SHIT #
+######################################
+
+STORED_IMAGE_ASSETS="${OPENSHIFT_DATA_DIR}public/images" 
+LIVE_IMAGE_ASSETS="${OPENSHIFT_REPO_DIR}public/"
+
+# Ensure the image asset directory exists
+if [ ! -d "${STORED_IMAGE_ASSETS}" ]; then
+  echo " Creating permanent images directory"
+  mkdir -p "${STORED_IMAGE_ASSETS}"
+fi
+
+# Ensure the image asset directory exists
+if [ ! -d "${LIVE_IMAGE_ASSETS}" ]; then
+  echo " Creating live images directory"
+  mkdir "${LIVE_IMAGE_ASSETS}"
+fi
+
+ln -sf "${STORED_IMAGE_ASSETS}" "${LIVE_IMAGE_ASSETS}"
+
+######################################
+# http://stackoverflow.com/questions/16678669/paperclip-configuration-to-use-with-openshift/
+######################################
+
 pushd ${OPENSHIFT_REPO_DIR} > /dev/null
 bundle exec rake db:migrate RAILS_ENV="production"
 popd > /dev/null
