@@ -17,6 +17,8 @@ For general Openshift usage help, see the [Getting Started page](https://www.ope
 
 For those looking for just the paperclip configuration example:
 
+### Note: This does require the global configuration file, which I have included the code for in `config/application.rb` below
+
 In `Gemfile`:
 ~~~
 gem 'paperclip'
