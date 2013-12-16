@@ -1380,3 +1380,145 @@ Served asset /bootstrap.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 10.13.212.34 at 2013-10-31 20:51:22 +0000
 Served asset /application.js - 304 Not Modified (32ms)
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+Connecting to database specified by database.yml
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+Connecting to database specified by database.yml
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+Connecting to database specified by database.yml
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+No secret token environment variable set
+Unable to get OPENSHIFT_SECRET_TOKEN, using default
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 66.187.233.202 at 2013-12-16 23:18:01 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Compiled twitter-bootstrap-static/bootstrap.css  (184ms)  (pid 331)
+Compiled twitter-bootstrap-static/fontawesome.css  (71ms)  (pid 331)
+Compiled bootstrap_and_overrides.css  (270ms)  (pid 331)
+Compiled bootstrap_and_overrides.css  (1425ms)  (pid 331)
+Compiled welcome.css  (61ms)  (pid 331)
+Compiled application.css  (1783ms)  (pid 331)
+Compiled jquery.js  (5ms)  (pid 331)
+Compiled jquery_ujs.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/transition.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/alert.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/modal.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/dropdown.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/scrollspy.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/tab.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/tooltip.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/popover.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/button.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/collapse.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/carousel.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap/affix.js  (0ms)  (pid 331)
+Compiled twitter/bootstrap.js  (110ms)  (pid 331)
+Compiled bootstrap.js  (153ms)  (pid 331)
+Compiled welcome.js  (1ms)  (pid 331)
+Compiled application.js  (300ms)  (pid 331)
+Completed 200 OK in 2194.1ms (Views: 2193.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /bootstrap_and_overrides.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:03 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (56ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.187.233.202 at 2013-12-16 23:18:04 +0000
+Served asset /application.js - 304 Not Modified (76ms)
