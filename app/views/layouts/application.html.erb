@@ -40,7 +40,8 @@
             <% elsif flash[:error] %>
               <% alert_type = "error"; alert = flash[:error] %>
             <% end %>
-            <div class="alert alert-<%= alert_type %>">
+            <div class="alert alert-<%= alert_type %> alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
               <strong><%= alert %></strong>
             </div>
           </div>
